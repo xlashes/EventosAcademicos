@@ -36,7 +36,7 @@ public class P_usuario extends HttpServlet {
            //Recogemos variables que son enviadas desde Index.jsp
             String usuario = request.getParameter("inpt_usuario");
             String contra = request.getParameter("inpt_contrasenna");
-
+            //hola
             //Realizamos acceso a base de Datos
             String [] datos=Sql.getFila("SELECT * FROM usuarios WHERE Nombre='" +usuario+"' AND Contrasena='"+contra+"'");
 
