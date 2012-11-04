@@ -50,7 +50,10 @@
                     </tr>
                <%  } %>
             </table>
-            <button type="button" id="btn_nuevasolicitud">Nueva Solicitud</button>
+            <form method="post" action="IniciarLlenadoSolicitud">            
+                <input type="hidden" id="inpt_nombre" name="inpt_nombre" value="<%=nombre%>"/>
+                <input type="submit" id="btn_nuevaSolicitud" value="Nueva Solicitud"/>
+            </form>
         </fieldset>
         </div>
         <div id="reportes">

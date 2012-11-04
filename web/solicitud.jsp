@@ -33,17 +33,17 @@
     	<h2>Formulario de Solicitud de Participación en Evento</h2>       
         <input type="image" src="http://www.ic-itcr.ac.cr/~cazofeifa/PEA/Img/salir.png" id="btn_cerrar" onclick="salir()" />
         <form method="post" action="EnviarSolicitud" name="formulario">
-        <label id="lb_cerrarsesion" onclick="salir()">Cerrar sesión <i><%=usuario%></i></label>
-	
+        <label id="lb_cerrarsesion" onclick="salir()">Cerrar sesión <i><%=usuario%></i></label>	
 	<div id="datospersonales">
 		<fieldset>                   
 			<legend id="lgd_datospersonales">Datos Personales</legend>
+                        <br><br>
 			<label id="lb_nombre">Nombre:</label>
-                        <input type="text" id="inpt_nombre" value="<%=nombre %>"/><br/>
+                        <input type="text" id="inpt_nombre" value="<%=nombre %>" disabled="disabled"/><br/>
 			<label id="lb_apellidos">Apellidos:</label>
-			<input type="text" id="inpt_apellidos" value="<%=apellidos%>"/><br/>
+			<input type="text" id="inpt_apellidos" value="<%=apellidos%>" disabled="disabled"/><br/>
 			<label id="lb_titulo" >Titulo acad&eacute;mico:</label>
-			<input type="text" id="inpt_titulo" value ="<%=titulo%>"/><br/>
+			<input type="text" id="inpt_titulo" value ="<%=titulo%>" disabled="disabled"/><br/>
 			<label id="lb_participacion">Tipo de participaci&oacute;n:</label>
 			<select name="slct_participacion"/>
                             <option value="0">Participante</option>
@@ -59,6 +59,7 @@
 	<div id="datosevento">
             <fieldset>
 		<legend id="lgd_datosevento">Datos Evento</legend>
+                <br><br>
 		<label id="lb_nombreevento">Nombre:</label>
 		<input type="text" name="inpt_nombreevento" id="inpt_nombreevento"/><br/>
 		<label id="lb_lugar">Lugar:</label>
@@ -82,6 +83,7 @@
             </fieldset>
 	</div>
 	<div id="datosgenerales">
+            
             <fieldset id="fld_datosgenerales">
 		<legend id="lgd_datosgenerales">Datos Generales</legend>
 		<input type="image" src="http://www.ic-itcr.ac.cr/~cazofeifa/PEA/Img/guardar.png" id="btn_guardar"/><br/>
