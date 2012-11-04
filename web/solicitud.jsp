@@ -2,6 +2,7 @@
     Document   : solicitud
     Created on : Oct 31, 2012, 1:46:56 AM
     Author     : Emendoza, Cazofeifa
+GIT: Subversion
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
