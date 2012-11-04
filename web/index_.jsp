@@ -1,9 +1,9 @@
 <%-- 
-    Document   : index
-    Created on : Oct 30, 2012, 10:17:34 PM
-    Author     : Emendoza, Cazofeifa
+    Document   : index_
+    Created on : Nov 1, 2012, 9:57:32 PM
+    Author     : Emendoza
 --%>
-
+            
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -28,7 +28,10 @@
                     <label id="lb_contrasenna">Contraseña:</label>
                     <input type="password" name="inpt_contrasenna" id="inpt_contrasenna"/><br/>
                     <input type="submit" id="btn_inicio" value="Iniciar Sesión"/>
-                </form>          
+                </form>
+            <div id="mensaje_error">
+                <p>El usuario o contraseña introducidos no son correctos</p>
+            </div>
         </div>
     </body>
 </html>

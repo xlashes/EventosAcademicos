@@ -4,7 +4,6 @@
  */
 package Persistencia;
 
-import java.sql.Array.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -15,17 +14,18 @@ import java.sql.SQLException;
 public class Conexion {
     
     private String driver = "com.mysql.jdbc.Driver";
-    private String url= "jdbc:mysql://72.13.93.200:3307/admibecas";
-   //private String url= "jdbc:mysql://localhost:3306/eventosacademicos";
-    private String user = "admibecas";
-    private String password = "sequifo2009";
+    //private String url= "jdbc:mysql://72.13.93.200:3307/admibecas";
+    private String url= "jdbc:mysql://localhost:3306/admibecas";
+    //private String user = "admibecas";
+    private String user = "root";
+    //private String password = "sequifo2009";
+    private String password = "Mysql";
     
     public Connection getConnection() {
-    Connection cn= null;
-
+        Connection cn;
         try{
-            Class.forName(driver).newInstance();//Obtenmos el driver de mysql
-            cn= DriverManager.getConnection(url, user, password);//Conectamos a nuestra data
+            Class.forName(driver).newInstance();//Obtiene el driver de mysql
+            cn= DriverManager.getConnection(url, user, password);//Conecta a la BD de la URL
 
         } catch(SQLException e) {
             System.out.println(e.toString());
@@ -33,8 +33,7 @@ public class Conexion {
         } catch(Exception e) {
             System.out.println(e.toString());
             cn= null;
-        }
-        
+        }  
         return cn;
     }
 }

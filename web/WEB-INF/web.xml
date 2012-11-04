@@ -2,11 +2,75 @@
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
     <servlet>
         <servlet-name>P_usuario</servlet-name>
-        <servlet-class>Persistencia.P_usuario</servlet-class>
+        <servlet-class>Controlador.IniciarSesion2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Control</servlet-name>
+        <servlet-class>Controlador.Control</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>IniciarSesion</servlet-name>
+        <servlet-class>Controlador.IniciarSesion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>IniciarLlenadoSolicitud</servlet-name>
+        <servlet-class>Controlador.IniciarLlenadoSolicitud</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EnviarSolicitud</servlet-name>
+        <servlet-class>Controlador.EnviarSolicitud</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EnviarReporte</servlet-name>
+        <servlet-class>Controlador.EnviarReporte</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>IniciarLlenadoReporte</servlet-name>
+        <servlet-class>Controlador.IniciarLlenadoReporte</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CargaBorradorSolicitud</servlet-name>
+        <servlet-class>Controlador.CargaBorradorSolicitud</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CargarBorradorReporte</servlet-name>
+        <servlet-class>Controlador.CargarBorradorReporte</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>P_usuario</servlet-name>
         <url-pattern>/P_usuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Control</servlet-name>
+        <url-pattern>/Control</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>IniciarSesion</servlet-name>
+        <url-pattern>/IniciarSesion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>IniciarLlenadoSolicitud</servlet-name>
+        <url-pattern>/IniciarLlenadoSolicitud</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EnviarSolicitud</servlet-name>
+        <url-pattern>/EnviarSolicitud</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EnviarReporte</servlet-name>
+        <url-pattern>/EnviarReporte</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>IniciarLlenadoReporte</servlet-name>
+        <url-pattern>/IniciarLlenadoReporte</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CargaBorradorSolicitud</servlet-name>
+        <url-pattern>/CargaBorradorSolicitud</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CargarBorradorReporte</servlet-name>
+        <url-pattern>/CargarBorradorReporte</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
